@@ -9,11 +9,13 @@
     --cor-principal: #8E2424;
     --cor-principal-transparent: #8e242410;
     --cor-secundaria: #101828;
+    --cor-borda-cinza: #EAECF0;
+    --font: 'Inter', Arial;
 
 }
 
 body {
-    font-family: arial, sans-serif;
+   font-family: var(--font);
     background-color: #ffffff;
 }
 .logo{
@@ -101,9 +103,9 @@ body {
     color: var(--cor-do-texto);
     font-weight: 400;
     font-size: 20px;
-    line-height: 20px;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    line-height: 30px;
+    padding-left: 12rem;
+    padding-right: 12rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -171,14 +173,14 @@ height: 192px;
 .metricas__valor {
     font-size: 60px;
     font-weight: 600;
-    font: inter;
+    font-family: var(--font);
     color: var(--cor-principal);
 }
 
 .metricas__titulo {
     font-size: 18px;
     font-weight: bold;
-    font: inter;
+    font-family: var(--font);
     color: var(--cor-secundaria);
     line-height: 28px;
 }
@@ -186,7 +188,8 @@ height: 192px;
 .metricas__texto{
     font-size: 16px;
     font-weight: 400;
-    font: inter;
+    line-height: 24px;
+    font-family: var(--font);
     color: var(--cor-do-texto);   
 }
 
@@ -209,7 +212,7 @@ height: 192px;
 .talentos__sub {
     font-size: 18px;
     font-weight: 500;
-    font: inter;
+    font-family: var(--font);
     color: var(--cor-principal);
     line-height: 28px;
     align-items: center;
@@ -221,7 +224,7 @@ height: 192px;
 .talentos__titulo {
     font-size: 60px;
     font-weight: 600;
-    font: inter;
+    font-family: var(--font);
     color: var(--cor-secundaria);
     align-items: center;
     justify-content: center;
@@ -232,7 +235,7 @@ height: 192px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    font: inter;
+    font-family: var(--font);
     color: var(--cor-do-texto); 
     align-items: center;
 }
@@ -243,6 +246,75 @@ height: 192px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.vagas__bloco {
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 96px ;
+    gap: 32px;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-top: 80px;
+}
+
+.vagas__tipo {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font);
+    color: var(--cor-secundaria);
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 768px;
+    height: 358px;
+    gap: 32px;
+}
+
+.vagas__conteudo {
+    flex-direction: column;
+    display: flex;
+    padding: 40px ;
+    gap: 64px;
+    align-items: flex-start;
+    width: 100%;
+    border: var(--cor-borda-cinza) solid;
+    border-radius: 40px;
+}
+
+.vagas__conteudo__titulo {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--font);
+    color: var(--cor-secundaria);
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 32px;
+}
+
+.vagas__info {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: var(--font);
+    color: var(--cor-do-texto); 
+    align-items: flex-start;
+    gap: 40px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.vagas__tempo {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: var(--font);
+    color: var(--cor-do-texto); 
+    gap: 40px;
 }
 @media (max-width: 768px) {
   .top__header {
